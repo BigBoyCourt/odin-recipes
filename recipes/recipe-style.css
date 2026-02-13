@@ -268,12 +268,12 @@ header{
     -moz-transform: scale(.35);
     -ms-transform: scale(.35);
     -o-transform: scale(.35);
-    margin-top: 3px;
+    margin-top: 7px;
     margin-left: -80px;
     transform-origin: top left;
     position: fixed;
     background-color: rgba(255, 255, 255, 0);
-    z-index: 10;
+    z-index: 1000;
 }
 
 
@@ -284,19 +284,22 @@ header{
 
 @media screen and (max-width: 1100px) {
     .responsive-nav {
+        position: fixed;
         background-color: white;
         width: 1300px;
         margin-left: -100px;
         margin-right: -100px;
         height: 87px;
         border-bottom: 2px solid black;
+        z-index: 110;
 }
     .responsive-nav nav ul {
         display: none;
+        position: absolute;
         background-color: white;
         width: 100%;
-    clear: both;
-    z-index: 5;
+         z-index: 5;
+        border-bottom: 2px solid #1DA5BE;
     }
 
     .responsive-nav label {
@@ -328,7 +331,7 @@ header{
         height: 4px;
         background: white;
         margin: auto;
-        box-shadow: 0px 10px 0px #8f7676, 0px 20px 0px #8f7676, 0px 30px 0px #8f7676;
+        box-shadow: 0px 10px 0px #1DA5BE, 0px 20px 0px #1DA5BE, 0px 30px 0px #1DA5BE;
     }
 
     .responsive-nav nav a {
@@ -377,6 +380,7 @@ ul  {
     padding: 0;
     text-align: center;
     clear: both;
+    
 }
 
 ul li{
@@ -386,6 +390,7 @@ ul li{
       margin-right: 50px;
       margin-left: -30px;
       background-color: #1da6be1b;
+ 
       
 }
 
